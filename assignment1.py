@@ -1,6 +1,6 @@
 import pandas as pd
 import plotly.express as px
-from statsmodels.tsa.api import ExponentialSmoothing, SimpleExpSmoothing
+from statsmodels.tsa.holtwinters import ExponentialSmoothing, SimpleExpSmoothing
 
 pred = pd.read_csv("https://github.com/dustywhite7/econ8310-assignment1/raw/main/assignment_data_test.csv")
 data = pd.read_csv("https://github.com/dustywhite7/econ8310-assignment1/raw/main/assignment_data_train.csv")
