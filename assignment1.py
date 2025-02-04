@@ -15,7 +15,7 @@ taxi_trips.index.freq = taxi_trips.index.inferred_freq
 # Add trend component
 #
 # model = ExponentialSmoothing(taxi_trips, trend = 'add', seasonal = 'add').fit()
-model =  ExponentialSmoothing(taxi_trips, trend = 'mul', seasonal = 'add', damped = True).fit(use_brute=True)
+model =  ExponentialSmoothing(taxi_trips, trend = 'add', seasonal = 'add', damped = True).fit(use_brute=True)
 #Linear trend with damping
 damptrend = ExponentialSmoothing(taxi_trips, trend = 'mul', seasonal = 'add', damped = True).fit(use_brute=True)
 
